@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_item_frame"
+    android:layout_width="match_parent"
+    android:layout_height=" 72dp"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/to_do_date"
+        android:text="2017-07-29 \t 12:00~15:00"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/to_do_date">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_title"
+            android:text="Test title"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/item_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Test contents"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

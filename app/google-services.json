@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "632581456125",
+    "firebase_url": "https://beacon-de824.firebaseio.com",
+    "project_id": "beacon-de824",
+    "storage_bucket": "beacon-de824.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632581456125:android:5e3ba94b533a416a",
+        "android_client_info": {
+          "package_name": "com.example.youngk.communication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632581456125-e815s32sa4d38cg959lt876pgq2ko6b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd7Y5u8TxL4n6UPz_FlW42rthu5syz4lg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

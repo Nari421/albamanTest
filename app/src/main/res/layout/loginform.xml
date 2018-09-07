@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:weightSum="1">
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="이름"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_edittext_login"
+        android:textColorHint="#777777"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:hint="전화번호"
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_edittext_login"
+        android:textColorHint="#777777"
+        android:textColor="#000000"
+        android:inputType="phone"
+        android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/autologin"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/checkbox"
+            android:text="Remember login"
+            android:textColor="#000000" />
+
+        <Button
+        android:id="@+id/loginButton"
+        android:text="Log in"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_darkblue_btn"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <ProgressBar
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:indeterminateDrawable="@drawable/progress_spinner" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">알바생</string>
+    <string-array name="alba_array">
+        <item>HOME</item>
+        <item>급여계산</item>
+        <item>다이어리</item>
+        <item>채팅</item>
+        <item>로그아웃</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+</resources>

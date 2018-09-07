@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ShowCalendar"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/calendarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="직원 다이어리"
+        android:textSize="24dp" />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="내 근무현황"
+        android:textOff="전체 근무현황"
+        android:layout_below="@+id/calendarText"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/toggle" />
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.88"
+        android:selectedWeekBackgroundColor="@android:color/transparent"
+        android:unfocusedMonthDateColor="#fafafa"
+        android:showWeekNumber="false"
+        >
+    </CalendarView>
+
+    <ListView
+        android:id="@+id/dateListView"
+        android:layout_width="match_parent"
+        android:layout_height="126dp">
+    </ListView>
+
+
+    <!--<CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:minDate="04/01/2017"
+        android:maxDate="12/31/2017"
+        android:focusedMonthDateColor="#ff0000"
+        android:unfocusedMonthDateColor="#0000ff"
+        android:selectedWeekBackgroundColor="#FFFF00"
+        android:showWeekNumber="false"
+        android:weekSeparatorLineColor="#00ff00"></CalendarView>-->
+
+</LinearLayout>
